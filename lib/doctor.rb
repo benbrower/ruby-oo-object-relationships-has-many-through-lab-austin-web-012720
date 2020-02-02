@@ -25,5 +25,4 @@ class Doctor
     self.appointments.map { |appt| appt.date }
   end
 
-
 end
