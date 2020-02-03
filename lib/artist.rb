@@ -14,6 +14,15 @@ class Artist
   end
 
   def songs
-
+    Song.all.map { |song| song.artist == self }
   end
+
+  def new_song
+    Song.new(name, self, genre)
+  end
+
+  def genres
+    self.songs.map { |song| song.genre }.uniq
+  end
+  
 end
