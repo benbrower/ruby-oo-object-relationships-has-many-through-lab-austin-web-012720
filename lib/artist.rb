@@ -25,4 +25,5 @@ class Artist
     self.songs.map { |song| song.genre }.uniq
   end
 
+
 end
